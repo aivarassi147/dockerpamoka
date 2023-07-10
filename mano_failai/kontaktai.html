@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #D2691E;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #B8860B;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #8B008B;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>kotletai</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://www.lamaistas.lt/paieska?q=mamos%20kotletai%20receptas">mamos</a></li>
+      <li><a href="https://www.eurohorecana.lt/saldyti-kotletai-astra-kogus-24-vnt-170-g-4-08-kg">Saldyti</a></li>
+      <li><a href="https://www.foodnet.lt/products/patiekalai-ir-uzkandziai/kotletai">Uzsisakyti</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>Kotletai</h1>
+    <p>Maltinukai arba kotletai tikriausiai puikuojasi ant dažnos šeimininkės stalo. Tačiau kaip juos paruošti, kad jie būtų sultingi, minkšti ir išties labai gardūs?</p>
+    <p>Kotletai Mėsos patiekalai Paslaptis Kiauliena Jautiena Aviena Faršas Receptai Mėsa Pradėti galite nuo paprasčiausių prieskonių – juodųjų pipirų, kalendrų, aitriųjų paprikų, krapų, petražolių, mėtų ir pan.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Kotletu paslaptys</p>
+</footer>
+
+</body>
+</html>
