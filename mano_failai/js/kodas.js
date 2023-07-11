@@ -102,19 +102,3 @@
 //}
 
 
-//// Generuojamas atsitiktinis skaicius nuo 0 iki 1 neimtinai
-//let atsitiktinisSkaicius = Math.random();
-//
-//// atsitiktinis skaicius dauginamas iš 10
-//atsitiktinisSkaicius *= 10;
-//
-//// Suapvalinsiu atsitiktini skaiciu iki sveiko skaiciaus
-//atsitiktinisSkaicius = Math.floor(atsitiktinisSkaicius);
-//
-//// ir t.t.
-//console.log(atsitiktinisSkaicius)
-//
-//
-//random = Math.random() * 10 + 1
-//let randomNumb = Math.ceil(random);
-//console.log(randomNumb);
