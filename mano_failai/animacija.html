@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 90vh;
+      height: 90vh;
+      background-color: lightgray;
+      position: relative;
+    }
+
+    .square {
+      width: 50px;
+      height: 50px;
+      background-color: green;
+      position: absolute;
+      animation:  ;
+    }
+
+    @keyframes move {
+      0% {
+        top: 0;
+        left: 0;
+      }
+
+      100% {
+        top: 80%;
+        left: 80%;
+      }
+    }
+  </style>
+  <script>
+    function changePosition() {
+      let square = document.querySelector('.square');
+      let container = document.querySelector('.container');
+      let maxX = container.offsetWidth - square.offsetWidth;
+      var maxY = container.offsetHeight - square.offsetHeight;
+
+      let newX = Math.floor(Math.random() * maxX);
+      let newY = Math.floor(Math.random() * maxY);
+
+      square.style.left = newX + 'px';
+      square.style.top = newY + 'px';
+    }
+  </script>
+</head>
+<body>
+  <div class="container" >
+    <div class="square" onclick="changePosition()">
+      <img src="pics/Capture.JPG" width="100" height="100">
+    </div>
+  </div>
+</body>
+</html>
